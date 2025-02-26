@@ -1,0 +1,10 @@
+.tallas-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tallas-image {
+  max-width: 50%;
+  height: auto;
+} 

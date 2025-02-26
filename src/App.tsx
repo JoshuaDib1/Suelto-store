@@ -1,16 +1,24 @@
 import "./App.css";
-import Titulo from "./Titulo";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
+
+// Componentes de página
+import Home from './pages/Home/Home';
 
 function App() {
   return (
-    <div>
-      <Titulo></Titulo>
-      <video width="80%" height="80%" autoPlay muted loop>
-        <source src="/white0000-0250.mp4" type="video/mp4" />
-        Tu navegador no soporta el elemento de video.
-      </video>
-      
-    </div>
+    <Router>
+      <div className="app-container">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/producto" />
+          <Route path="/caracteristicas"  />
+          <Route path="/tienda"  />
+          <Route path="/empresa" />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
