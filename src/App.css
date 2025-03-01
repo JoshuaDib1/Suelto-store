@@ -43,8 +43,12 @@
 
 body {
   margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
   background-color: black;
   font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Evita scroll lateral si el Navbar se desborda */
 }
 
 .titulo {
@@ -52,7 +56,10 @@ body {
 }
 
 .app-container {
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

@@ -1,17 +1,11 @@
 import React from 'react';
-import './Home.css';
-import Titulo from '../../components/Titulo/Titulo';
-import Video from '../../components/Video/Video';
-import TallasImage from '../../components/TallasImage/TallasImage';
 
 const Home: React.FC = () => {
   return (
-    <div className="home-container">
-      <Titulo />
-      <Video src="/chase.mp4" />
-      <TallasImage src="/tallas.png" />
+    <div className="flex flex-col items-center w-full pt-[120px] animate-fadeIn">
+      
     </div>
   );
 };
 
-export default Home; 
+export default Home;

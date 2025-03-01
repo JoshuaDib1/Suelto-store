@@ -4,18 +4,18 @@ import Navbar from './components/Navbar/Navbar';
 
 // Componentes de página
 import Home from './pages/Home/Home';
+import Products from './pages/Products/Products';
+import About from './pages/About/About';
 
 function App() {
   return (
-    <Router>
+    <Router>       
       <div className="app-container">
-        <Navbar />
+        <Navbar />        
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/producto" />
-          <Route path="/caracteristicas"  />
-          <Route path="/tienda"  />
-          <Route path="/empresa" />
+          <Route path="/productos" element={<Products />} />
+          <Route path="/nosotros" element={<About />} />
         </Routes>
       </div>
     </Router>
