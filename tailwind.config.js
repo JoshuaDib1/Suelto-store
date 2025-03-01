@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         'rampart': ['"Rampart One"', 'cursive'],
+        'pacifico': ['Pacifico', 'cursive'],
       },
     },
   },

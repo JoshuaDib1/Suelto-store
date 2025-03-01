@@ -1,5 +1,7 @@
 /* Importar la fuente Rampart One desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 
 @tailwind base;
 @tailwind components;
