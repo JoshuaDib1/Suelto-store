@@ -1,8 +1,6 @@
 import React from 'react';
 import InstagramProfileEmbed from '../../components/InstagramFeed/InstagramEmbed';
 
-// URL del perfil de Instagram - ya no se usa directamente, pero lo mantenemos por compatibilidad
-const instagramProfileUrl = 'https://www.instagram.com/suelto.cl/p/DGOFg-GOG9g/';
 
 const Work: React.FC = () => {
   return (
