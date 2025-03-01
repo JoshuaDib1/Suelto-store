@@ -1,28 +1,14 @@
 import React from 'react';
 import { InstagramEmbed } from 'react-social-media-embed';
 
-interface InstagramProfileEmbedProps {
-  profileUrl: string;
-  className?: string;
-}
 
-const InstagramProfileEmbed: React.FC<InstagramProfileEmbedProps> = ({ 
-  profileUrl,
-  className = '' 
-}) => {
-  // Extraer el nombre de usuario de la URL
-  const usernameMatch = profileUrl.match(/instagram\.com\/([^\/]+)/);
-  const username = usernameMatch ? usernameMatch[1] : 'suelto_cl';
-  
+const InstagramProfileEmbed: React.FC = () => {
+  // URL directa del embed de Instagram
+  const embedUrl = "https://www.instagram.com/suelto.cl/p/DGOFg-GOG9g";
+
   return (
-    <div className={`instagram-profile-embed ${className}`}>
-      <div className="flex justify-center">
-        <InstagramEmbed 
-          url={profileUrl} 
-          width={355} 
-          captioned
-        />
-      </div>
+    <div className={`instagram-profile-embed`}>
+     <InstagramEmbed url={embedUrl} width={328} />
     </div>
   );
 };
